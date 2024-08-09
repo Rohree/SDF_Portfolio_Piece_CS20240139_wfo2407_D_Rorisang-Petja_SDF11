@@ -12,19 +12,236 @@
     <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
 </head>
 
-<body class="null">
-    <div class="container flex flex-col mx-auto">
-        <!-- Main container with navigation and header content -->
+<body class="bg-gray-100">
+    <div class="mx-auto bg-white py-2 w-full">
+        <!-- Component 1 -->
+        <div class="flex justify-between items-center px-4 w-full">
+            <div>
+                <!-- logo -->
+                 <img class="h-8" src="assets/component-1/navigation/cache-bank-logo.png" alt="">
+             </div>
+             <div class="hidden md:flex justify-between items-center px-4">
+                <!-- nav -->
+                 <a class="px-3 font-normal text-gray-500 hover:text-dark-grey-900" href="#product">Product</a>
+                 <a class="px-3 font-normal text-gray-500 hover:text-dark-grey-900" href="#features">Features</a>
+                 <a class="px-3 font-normal text-gray-500 hover:text-dark-grey-900" href="#get-started">Get Started</a>
+                 <a class="px-3 font-normal text-gray-500 hover:text-dark-grey-900" href="#Contact">Contact</a>
+             </div>
+             <div class="hidden md:flex justify-between items-center px-4">
+                <!-- log in -->
+                 <button class="px-3 font-normal text-gray-500 hover:text-dark-grey-900">Login</button>
+                    <!-- sign up -->
+                     <button class="px-4 py-2 rounded-2xl font-bold text-purple-800 bg-purple-200 hover:bg-purple-300">Sign Up</button>
+             </div>
+             <button class="md:hidden">
+                <div id="hamburger-button" class="w-18 h-8 px-2 py-2 space-y-1">
+                    <div class="bg-black w-6 h-1"></div>
+                    <div class="bg-black w-6 h-1"></div>
+                    <div class="bg-black w-6 h-1"></div>
+                </div>
+             </button>
+             <div id="menu" class="hidden absolute bg-white rounded top-12 shadow-md py-4 pl-8 pr-56 grid gap-3">
+                    <!-- nav -->
+                     <a class="px-3 font-normal text-gray-500 hover:text-dark-grey-900" href="#product">Product</a>
+                     <a class="px-3 font-normal text-gray-500 hover:text-dark-grey-900" href="#features">Features</a>
+                     <a class="px-3 font-normal text-gray-500 hover:text-dark-grey-900" href="#get-started">Get Started</a>
+                     <a class="px-3 font-normal text-gray-500 hover:text-dark-grey-900" href="#Contact">Contact</a>
+                     <a class="px-3 font-normal text-gray-500 hover:text-dark-grey-900" href="#">Login</a>
+                        <!-- sign up button-->
+                    <button class="px-4 py-2 rounded-2xl font-bold text-purple-800 bg-purple-200 hover:bg-purple-300">Sign Up</button>
+                
+             </div>
+        </div>
     </div>
+
+
+    <!-- Component 2 Endorsment & Hero-->
+    <div class="w-full p-8">
+
+        <!-- Hero -->
+       <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+        <div class="m-10 flex flex-col col-span-1 text-start justify-center">
+            <div >
+                <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-blue-900">The Clever Place  To Keep Your Cache</h1>
+
+            <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-gray-900">Cache Bank is designed for developers. We understand your financial needs are as unique as the code you write. Our services offer cutting-edge solutions that help you take care of your cash</p>
+            </div>
+            <div class="mt-8 flex flex-col gap-6 lg:flex-row  md:gap-6 mr-auto">
+                <button class="bg-green-500 py-4 px-8 rounded-2xl text-white font-bold hover:bg-green-400 text-sm ">Join Cache Now</button>
+                <button class="bg-green-500 py-4 px-8 rounded-2xl text-white font-bold hover:bg-green-400 text-sm">Join Our Discord Server</button>
+            </div>
+        </div>
+        <div class="items-center justify-end col-span-1 hidden md:flex">
+            <img class="w-4/5 rounded-md" src="assets/component-2/hero-image.png" alt="cartoon image of girl in the office on her desk">
+        </div>
+       </section>
+
+       <!-- Endorsment -->
+       <section class="flex flex-col  gap-12 items-center">
+        <h1 class="mb-6 font-bold text-xl leading-7 text-blue-900">Endorsed by global companies like</h1>
+        <ul class="flex gap-14 col-span-1 justify-between w-full">
+            <li>
+                <img src="assets/component-2/logos/nike-logo.svg" alt="nike logo">
+            </li>
+            <li><img src="assets/component-2/logos/amazon-logo.svg" alt="amazon logo"></li>
+            <li><img src="assets/component-2/logos/minecraft-logo.svg" alt="minecraft-logo"></li>
+            <li><img src="assets/component-2/logos/steam-logo.svg" alt="steam-logo"></li>
+            <li><img src="assets/component-2/logos/notion-logo.svg" alt="notion-logo"></li>
+        </ul>
+       </section>
+    </div>
+
+    <!-- Component 3: Features -->
+   <div class="container m-auto flex flex-col mt-24 lg:mt-48">
+    <!-- heading & text -->
+    <div class="text-center mx-auto">
+        <h1 class="mb-8 text-2xl font-extrabold leading-tight text-blue-900">
+            Elevate Your Banking With Cache
+        </h1>
+        <p class="mb-6 text-base font-normal leading-7  text-gray-500 px-20 lg:px-40 xl:px-80"> We merge cutting edge banking with a deep understanding of software developers' needs. Experience tailored financial solutions, advanced security and tech focused design just for you.</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 text-center mx-auto px-20">
+        <div class="flex-col shadow-xl p-6 rounded-2xl hover:bg-green-400 ">
+            <div class="inline-block justify-around bg-green-500 py-2 px-2 rounded-md mb-4">
+                <img src="assets/component-3/feature-icons/developer-focused-accounts.svg" alt="">
+            </div>
+            
+                <h1 class="font-extrabold text-blue-900 mb-3 px-5">
+                    Developer-Focused Account Plans
+                </h1>
+            
+            <p class="text-blue-900 font-normal">
+                Tailored accounts offering benefits like high-yield savings and exclusive investment options, designed specifically for software developers' financial needs and growth
+            </p>
+        </div>
+        <div class="flex-col shadow-xl p-6 rounded-2xl hover:bg-green-400">
+            <div class="inline-block justify-around bg-green-500 py-2 px-2 rounded-md mb-4">
+                <img src="assets/component-3/feature-icons/advanced-online-banking.svg" alt="">
+            </div>
+            
+                <h1 class="font-extrabold text-blue-900 mb-3 px-5">
+                    Advanced Online Banking Platform
+                </h1>
+            
+            <p class="text-blue-900 font-normal">
+                A cutting-edge intuitive online banking interface with features like API intergrations, allowing developers to seamlessly manage finances alongside their coding projects
+            </p>
+        </div>
+        <div  class="flex-col shadow-xl p-6 rounded-2xl hover:bg-green-400">
+            <div class="inline-block justify-around bg-green-500 py-2 px-2 rounded-md mb-4">
+                <img src="assets/component-3/feature-icons/tech-savvy-customer.svg" alt="">
+            </div>
+            
+                <h1 class="font-extrabold text-blue-900 mb-3 px-5">
+                    Tech-Savvy Customer Support
+                </h1>
+            
+            <p class="text-blue-900 font-normal">
+                Expert support team with a deep understanding of the tech industry providing relevant financial advice and assistance specifically for software developers.
+            </p>
+        </div>
+        <div class="flex-col shadow-xl p-6 rounded-2xl hover:bg-green-400">
+            <div class="inline-block justify-around bg-pink-500 py-2 px-2 rounded-md mb-4">
+                <img src="assets/component-3/feature-icons/high-level-security.svg" alt="">
+            </div>
+            
+                <h1 class="font-extrabold text-blue-900 mb-3 px-5">
+                    High-Level Security Features
+                </h1>
+            
+            <p class="text-blue-900 font-normal">
+                State of the art cybersecurity measures including multi-factor authentication and encryption, ensuring the safety of digital assest, which is crucial for tech professionals.
+            </p>
+        </div>
+        <div class="flex-col shadow-xl p-6 rounded-2xl hover:bg-green-400">
+            <div class="inline-block justify-around bg-pink-500 py-2 px-2 rounded-md mb-4">
+                <img src="assets/component-3/feature-icons/innovative-financial-tools.svg" alt="">
+            </div>
+            
+                <h1 class="font-extrabold text-blue-900 mb-3 px-5">
+                    Innovative Financial Tools
+                </h1>
+            
+            <p class="text-blue-900 font-normal">
+                    Access to unique financial tools and resources loke project funding accounts and tech startup investent opportunities catering to the entrepreneural spirit of developers
+            </p>
+        </div>
+        <div class="flex-col shadow-xl p-6 rounded-2xl hover:bg-green-400">
+            <div class="inline-block justify-around bg-pink-500 py-2 px-2 rounded-md mb-4">
+                <img src="assets/component-3/feature-icons/community-networking-opps.svg" alt="">
+            </div>
+            
+                <h1 class="font-extrabold text-blue-900 mb-3 px-5">
+                    Community and Networking Opportunities
+                </h1>
+            
+            <p class="text-blue-900 font-normal">
+                Exclusive access to tech events, websinars and a community platform for networking collaborations and sharing insights within the software development industry
+            </p>
+        </div>
+    </div>
+   </div>
+
+
+
+
+   <!-- Component 4  -->
     <div class="w-full">
-        <!-- Wide full-width container for additional content -->
+        <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+            <div class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-8">
+                <div class="flex flex-col items-center">
+                    <h3 class="text-5xl font-extrabold leading-tight text-center text-blue-900"> <span id="countto1" countTo="250">250</span>+</h3>
+                    <p class="text-base font-medium leading-7 text-center text-blue-900">Hours Saved Sitting in the Bank</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h3 class="text-5xl font-extrabold leading-tight text-center text-blue-900"> <span id="countto2" countTo="12">12</span>m</h3>
+                    <p class="text-base font-medium leading-7 text-center text-blue-900">Cache Saved</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h3 class="text-5xl font-extrabold leading-tight text-center text-blue-900"> <span id="countto3" countTo="2.800" data-decimal="1">2.8</span>k+</h3>
+                    <p class="text-base font-medium leading-7 text-center text-blue-900">Global Partners</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <h3 class="text-5xl font-extrabold leading-tight text-center text-blue-900"> <span id="countto4" countTo="18000">18000</span>+</h3>
+                    <p class="text-base font-medium leading-7 text-center text-blue-900">Happy Developers</p>
+                </div>
+
+            </div>
+        </div>
     </div>
-    <div class="container mx-auto">
-        <!-- Centered container for more content -->
+
+    <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+    <div class="items-center justify-end col-span-1 hidden md:flex">
+        <img class="w-4/5 rounded-md" src="assets/component-4/getting-started.png" alt="cartoon image of girl in the office on her desk">
     </div>
-    <div class="w-full">
-        <!-- Wide full-width container for additional content -->
+    <div class="m-10 flex flex-col col-span-1 text-start justify-center">
+        <div >
+            <h1 class="mb-2 text-2xl font-extrabold leading-tight lg:text-3xl text-blue-900">How Cache Works</h1>
+
+        <p class="mb-6 text-sm font-normal leading-4 lg:w-3/4 text-blue-900">Cache Bank is designed for developers. We understand your financial needs are as unique as the code you write. Our services offer cutting-edge solutions that help you take care of your cash</p>
+        </div>
+        <div class="grid grid-cols-2 gap-12 mr-auto">
+            <div>
+                <span class="block">1</span>
+            </div>
+            <div>
+                <span>2</span>
+            </div>
+            <div>
+                <span>3</span>
+            </div>
+            <div>
+                <span>4</span>
+            </div>
+        </div>
     </div>
+   </section>
+
+
+
+
     <div class="w-full">
         <!-- Wide full-width container for additional content -->
     </div>
@@ -36,4 +253,5 @@
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/maps.js"></script>
     <script src="./assets/js/loopple/loopple.js"></script>
+    <script src="./assets/js/loopple/custom.js"></script>
 </body>
