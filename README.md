@@ -1,19 +1,30 @@
-# Installation
+# SDF11 Portfolio Piece
 
-```
-# Install dependencies
-npm install
+## Project Overview
+For this project, I was entrusted with developing a landing page using Tailwind CSS, based on a pre-designed layout. This experience not only allowed me to execute a given design with precision but also deepened my proficiency with Tailwind. Through this project, I honed my ability to translate visual concepts into responsive, scalable code, further solidifying my expertise in modern CSS frameworks.
 
-# Start the development server with live preview using Browsersync
-npm run browsersync
+## Loom Video link
 
-# Compile Tailwind CSS
-npm run build
+# Presentation Slides
 
-# Compile Tailwind CSS minified
-npm run build-minify
+## Introdunction
 
-```
+![Getting Started](assets/slides/1.png)
 
-# Presentation Talking Points and Presentation Slide Template
-Check out the Project Overview in this GitHub Repo for the guide to talking points for your presentation as well the starter template for your Google Slides here: https://github.com/CodeSpace-Academy/SDF_Portfolio_Piece_StudentNo_Classcode_Group_Name-Surname_SDF11/blob/main/11_portfolio_piece_1.md
+## Component 1
+![Getting Started](assets/slides/2.gif)
+
+## Component 2
+![Getting Started](assets/slides/3.png)
+
+## Component 3
+![Getting Started](assets/slides/4.png)
+
+## Component 4
+![Getting Started](assets/slides/5.gif)
+![Getting Started](assets/slides/6.png)
+
+## Component 5
+![Getting Started](assets/slides/7.png)
+
+

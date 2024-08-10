@@ -31,13 +31,13 @@ function handleIntersection(entries, observer) {
             let countTo = span.getAttribute('countTo');
             let decimalPlaces = span.getAttribute('data-decimal') ? parseInt(span.getAttribute('data-decimal')) : 0;
             animateCount(span, countTo, 2000, decimalPlaces);
-            observer.unobserve(span); // Stop observing once the animation starts
+            observer.unobserve(span);
         }
     });
 }
 
 const observer = new IntersectionObserver(handleIntersection, {
-    threshold: 0.5 // Trigger when 50% of the element is visible
+    threshold: 0.5 
 });
 
 document.querySelectorAll('[id^="countto"]').forEach(span => {
